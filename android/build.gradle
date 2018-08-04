@@ -24,6 +24,6 @@ android {
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:${_reactNativeVersion}"
-    implementation "com.google.android.gms:play-services-ads:${_gmsSdkVersion}"
+    compile "com.facebook.react:react-native:${_reactNativeVersion}"
+    compile "com.google.android.gms:play-services-ads:${_gmsSdkVersion}"
 }
