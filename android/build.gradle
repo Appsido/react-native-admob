@@ -2,10 +2,10 @@ apply plugin: 'com.android.library'
 
 def _reactNativeVersion = '+'
 def _compileSdkVersion = 27
-def _buildToolsVersion = '27.0.3'
+def _buildToolsVersion = '28.0.3'
 def _minSdkVersion = 16
-def _targetSdkVersion = 27
-def _gmsSdkVersion = '+'
+def _targetSdkVersion = 26
+def _gmsSdkVersion = '16.0.0'
 
 android {
     compileSdkVersion _compileSdkVersion
@@ -24,6 +24,6 @@ android {
 }
 
 dependencies {
-    compile "com.facebook.react:react-native:${_reactNativeVersion}"
-    compile "com.google.android.gms:play-services-ads:${_gmsSdkVersion}"
+    implementation "com.facebook.react:react-native:${_reactNativeVersion}"
+    implementation "com.google.android.gms:play-services-ads:${_gmsSdkVersion}"
 }
